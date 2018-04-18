@@ -1,9 +1,9 @@
 # Add  code here!
 def prime?(number)
   i = 1
+  number_divisible_by = []
 
   while i <= number
-    number_divisible_by = []
     if number % i == 0
       number_divisible_by << i
     end
