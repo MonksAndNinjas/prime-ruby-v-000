@@ -3,7 +3,7 @@ def prime?(number)
   i = 1
  number_divisible_by = []
   while i <= number
-    if number % i == 0
+    if number % i == 0 || i != 1 && i != i
       number_divisible_by << i
     end
       i += 1
