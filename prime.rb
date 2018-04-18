@@ -13,5 +13,7 @@ def prime?(number)
   number_divisible_by
   if number_divisible_by.size === 2
     return true   #number is prime
+  else
+    return false
   end
 end
