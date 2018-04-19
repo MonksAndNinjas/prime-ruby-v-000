@@ -2,8 +2,8 @@
 def prime?(number)
   number = number.abs
   collection = (1..number).to_a
-
-  if collection.any?{|num| number % num == 0 and num != number and num != 1} || number == 1 || number == 0
+  yield
+  if collection.any?{|num| number % num == 0 and num != number and num != 1}
     return false
   else
     return true
@@ -11,3 +11,4 @@ def prime?(number)
 end
 
 # (1...number).to_a = collection;  if collection.any?{|num| number%num == 0 } == true then return false
+prime?(number) {return false if number == 1 || number == 0}
