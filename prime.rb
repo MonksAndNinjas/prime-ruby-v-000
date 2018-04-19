@@ -2,6 +2,7 @@
 def prime?(number)
   if number < 0
     number = number * -1
+    number
   end
   number
   collection = (1..number).to_a
