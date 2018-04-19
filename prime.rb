@@ -11,4 +11,4 @@ def prime?(number)
 end
 
 # (1...number).to_a = collection;  if collection.any?{|num| number%num == 0 } == true then return false
-prime?(number) {return false if number == 1 || number == 0 || number == -1}
+prime?(number) {|i| returns false if i == 0 || i == 1}
