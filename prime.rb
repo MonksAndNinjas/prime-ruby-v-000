@@ -6,8 +6,7 @@ def prime?(number)
   end
   number
   collection = (1..number).to_a
-  if collection.any?{|num| (num != number) and (num != 1) and (number % num == 0)} == true
-    return false
+  if collection.any?{|num| (num != number) && (num != 1) && (number % num == 0)} == true
   else
     return true
   end
