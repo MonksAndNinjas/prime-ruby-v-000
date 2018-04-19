@@ -2,7 +2,7 @@
 def prime?(number)
   number = number.abs
   collection = (1..number).to_a
-  yield
+  yield(number)
   if collection.any?{|num| number % num == 0 and num != number and num != 1}
     return false
   else
