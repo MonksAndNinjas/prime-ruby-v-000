@@ -3,9 +3,11 @@ def prime?(number)
   number = number.abs
   collection = (1..number).to_a
 
-  if collection.any?{|num| number % num == 0 and num != number and num != 1}
+  if number = 1 || number = 0
+    return false
+  elsif collection.any?{|num| number % num == 0 and num != number and num != 1}
     return true
-  elsif number == 1 || number == 0
+  else
     return false
   end
 end
