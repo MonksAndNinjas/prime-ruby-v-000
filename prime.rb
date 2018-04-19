@@ -6,9 +6,9 @@ def prime?(number)
   if number = 1 || number = 0
     return false
   elsif collection.any?{|num| number % num == 0 and num != number and num != 1}
-    return true
-  else
     return false
+  else
+    return true
   end
 end
 
