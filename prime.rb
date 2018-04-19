@@ -3,6 +3,7 @@ def prime?(number)
   if number < 0
     number = number * -1
   end
+  number
   collection = (1..number).to_a
 
   if collection.any?{|num| number % num == 0 and num != number and num != 1} == true
