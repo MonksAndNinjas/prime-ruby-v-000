@@ -5,7 +5,7 @@ def prime?(number)
 
   if number = 1 || number = 0
     return false
-  elsif collection.any?{|num| number % num == 0 and num != number and num != 1} == true
+  elsif collection.any?{|num| number % num == 0 and num != number and num != 1} === true
     return false
   end
   return true
