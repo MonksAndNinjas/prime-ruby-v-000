@@ -9,8 +9,13 @@ def prime?(number)
   if collection.any?{|num| number % num == 0 } == true
     if num != number
       if num != 1
-        return 
-  
+        return false
+      end
+    end
+    return true
+  end
+end
+
 
 
 # (1...number).to_a = collection;  if collection.any?{|num| number%num == 0 } == true then return false
