@@ -6,11 +6,11 @@ def prime?(number)
   end
   number
   collection = (1..number).to_a
-  if collection.any?{|num| (num != number) && (num != 1) && (number % num == 0)} == true
-  else
-    return true
-  end
-end
+  if collection.any?{|num| number % num == 0 } == true
+    if num != number
+      if num != 1
+        return 
+  
 
 
 # (1...number).to_a = collection;  if collection.any?{|num| number%num == 0 } == true then return false
