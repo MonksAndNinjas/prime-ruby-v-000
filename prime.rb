@@ -4,9 +4,9 @@ def prime?(number)
   collection = (1..number).to_a
 
   if collection.any?{|num| number % num == 0 and num != number and num != 1} || number == 1 || number = 0
-    return false
-  else
     return true
+  elsif number == 1 || number == 0 
+    return false
   end
 end
 
