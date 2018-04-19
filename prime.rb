@@ -4,7 +4,8 @@ def prime?(number)
 
   if collection.any?{|num| number % num == 0 and num != 1 and num != number}
     return false
-  end
+  else
+    return true
 end
 
 
