@@ -17,3 +17,6 @@ def prime?(number)
     return false
   end
 end
+
+
+# (1...number).to_a = collection;  collection.any?{|num| number%num == 0 }
